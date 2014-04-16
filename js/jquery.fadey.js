@@ -1,18 +1,19 @@
 (function($) {
-	$.fn.fadey = function(options) {
-		var delay = 0;
+    $.fn.fadey = function(options) {
+        var delay = 0;
 
-		options = $.extend({
-			delay: 250,
-			speed: 500,
-			callback: function(elem, delay, speed) {
-				elem.delay(delay).fadeIn(speed);
-			}
-		}, options);		
+        options = $.extend({
+            delay: 250,
+            speed: 500,
+            callback: function(elem, delay, speed) {
+                elem.delay(delay).fadeIn(speed);
+            }
+        }, options);
 
-		$(this).each(function(index) {
-			delay += options.delay;
-			options.callback($(this), delay, options.speed);
-		});
-	}
+        $(this).each(function(index) {
+            delay += options.delay;
+            options.callback($(this), delay, options.speed);
+            console.log('done' + index);
+        });
+    }
 }(jQuery));
