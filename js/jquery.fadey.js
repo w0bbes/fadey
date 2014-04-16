@@ -1,5 +1,9 @@
 (function($) {
+
+    'use strict';
+
     $.fn.fadey = function(options) {
+
         var delay = 0;
 
         options = $.extend({
@@ -10,10 +14,9 @@
             }
         }, options);
 
-        $(this).each(function(index) {
+        this.each(function(index) {
             delay += options.delay;
             options.callback($(this), delay, options.speed);
-            console.log('done' + index);
         });
     }
 }(jQuery));
