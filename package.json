@@ -1,0 +1,36 @@
+{
+	"name": "fadey",
+	"version": "0.1.0",
+	"description": "fadey",
+	"author": "Product Plus <info@productplus.nl>",
+	"contributors": [
+		{
+			"name": "Rob Hendriks",
+			"email": "rob@productplus.nl"
+		}
+	],
+	"scripts": {
+		"start": "gulp"
+	},
+	"keywords": [
+		"jQuery",
+		"fade",
+		"delay"
+	],
+	"dependencies": {
+		"gulp": "*",
+		"gulp-less": "*",
+		"gulp-watch": "*",
+		"gulp-clean": "*",
+		"gulp-rename": "*",
+		"gulp-uglify": "*",
+		"gulp-plumber": "*",
+		"gulp-livereload": "*",
+		"gulp-minify-css": "*"
+	},
+	"analyze": false,
+	"license": "MIT",
+	"engines": {
+		"node": ">=0.10"
+	}
+}
